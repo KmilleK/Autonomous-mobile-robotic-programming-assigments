@@ -1,0 +1,113 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec 28 12:47:55 2022
+
+@author: camil
+"""
+
+import matplotlib.pyplot as plt
+from matplotlib.patches import Circle, PathPatch
+import mpl_toolkits.mplot3d.art3d as art3d
+import numpy as np
+import os
+
+
+def BA_plot(fig_name,folder_name):
+    
+
+    #figure size 
+    fig=plt.figure()
+    ax = fig.add_subplot(111,projection='3d')
+    #plt.xlim([-1, 12])
+    #plt.ylim([-1,12])
+
+    #Read the file ground truth for landmark and position 
+    GT_land =np.loadtxt("data/data_gnd/points.csv",delimiter=',')
+    for l in GT_land :
+        #print(l[2])
+        x_l=l[0]
+        y_l=l[1]
+        z_l=l[2]
+        circle=plt.Circle((y_l,z_l),radius=0.01,color='b')
+        ax.add_patch(circle)
+        art3d.pathpatch_2d_to_3d(circle, z=1, zdir="x")
+    
+    GT_frame=np.loadtxt("data/data_gnd/camera_poses.csv",delimiter=',')
+    x_line=[]
+    y_line=[]
+    z_line=[]
+
+    for f in GT_frame: 
+        #print(f[6])
+        x_f=f[4]
+        y_f=f[5]
+        z_f=f[6]
+        circle=plt.Circle((y_f,z_f),radius=0.02,color='b')
+        ax.add_patch(circle)
+        art3d.pathpatch_2d_to_3d(circle, z=x_f, zdir="x")
+        x_line.append(x_f)
+        y_line.append(y_f)
+        z_line.append(z_f)
+    #print(z_line)
+    #ax.plot3D(x_line,y_line,z_line,'gray')
+
+    #Read the BA to plot landmark and position
+
+    #Name of the file 
+    cam_pose="camera_poses.csv"
+    map_points="points.csv"
+    
+    BA_land =np.loadtxt(folder_name+map_points,delimiter=',')
+    for l in BA_land :
+       #print(l[2])
+        x_l=l[0]
+        y_l=l[1]
+        z_l=l[2]
+        circle=plt.Circle((y_l,z_l),radius=0.01,color='r')
+        ax.add_patch(circle)
+        art3d.pathpatch_2d_to_3d(circle, z=1, zdir="x")
+   
+    BA_frame=np.loadtxt(folder_name+cam_pose,delimiter=',')
+    for f in BA_frame: 
+        x_f=f[4]
+        y_f=f[5]
+        z_f=f[6]
+        circle=plt.Circle((y_f,z_f),radius=0.02,color='r')
+        ax.add_patch(circle)
+        art3d.pathpatch_2d_to_3d(circle, z=x_f, zdir="x")
+
+
+    #finilaze the figure plot 
+
+    ax.set_xlim(-1, 1.5)
+    ax.set_ylim(-1, 1)
+    ax.set_zlim(-1, 1)
+
+    ax.set(title=fig_name)
+    ax.grid()
+    
+    fig.savefig(fig_name)
+    plt.show()
+
+def RMSE_plot(data):
+    rmse=np.loadtxt(data,delimiter=',')
+    fig, ax = plt.subplots(figsize=(5, 5))
+
+    plt.vlines(rmse[:,0],0,rmse[:,1])
+    ax.set(xlabel='Frame', ylabel='Rmse',
+           title="RMSE part for each frame")
+    ax.set_xlim([-1,20])
+    fig.savefig("plot/rmse")
+    plt.show()  
+
+
+#folder for the data 
+folderNoisyBA="data/data_noisy/"
+
+#BA_plot("Initial_plot",folderNoisyBA)
+
+folderOptiBA="data/data_opti/"
+#BA_plot("Final_plot",folderOptiBA)
+
+my_rmse="data/data_opti/RMSE.csv"
+RMSE_plot(my_rmse)

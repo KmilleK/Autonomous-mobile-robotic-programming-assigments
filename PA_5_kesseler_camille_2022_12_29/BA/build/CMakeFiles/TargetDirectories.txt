@@ -1,0 +1,6 @@
+/home/ckesseler/BA/build/CMakeFiles/rebuild_cache.dir
+/home/ckesseler/BA/build/CMakeFiles/edit_cache.dir
+/home/ckesseler/BA/build/CMakeFiles/test_BA.dir
+/home/ckesseler/BA/build/src/CMakeFiles/rebuild_cache.dir
+/home/ckesseler/BA/build/src/CMakeFiles/edit_cache.dir
+/home/ckesseler/BA/build/src/CMakeFiles/ba_example.dir

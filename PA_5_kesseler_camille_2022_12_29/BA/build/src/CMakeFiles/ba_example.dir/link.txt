@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libba_example.a  CMakeFiles/ba_example.dir/Feature.cpp.o CMakeFiles/ba_example.dir/Frame.cpp.o CMakeFiles/ba_example.dir/MapPoint.cpp.o CMakeFiles/ba_example.dir/Reader.cpp.o CMakeFiles/ba_example.dir/main.cpp.o
+/usr/bin/ranlib ../../lib/libba_example.a

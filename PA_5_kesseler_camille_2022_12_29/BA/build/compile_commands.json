@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/ckesseler/BA/build",
+  "command": "/usr/bin/g++  -DFMT_LOCALE -DGFLAGS_IS_A_DLL=0 -I/home/ckesseler/BA/include -isystem /usr/include/eigen3  -std=c++17 -Wall -O3 -DNDEBUG -fPIE   -o CMakeFiles/test_BA.dir/src/main.cpp.o -c /home/ckesseler/BA/src/main.cpp",
+  "file": "/home/ckesseler/BA/src/main.cpp"
+},
+{
+  "directory": "/home/ckesseler/BA/build/src",
+  "command": "/usr/bin/g++  -DFMT_LOCALE -DGFLAGS_IS_A_DLL=0 -I/home/ckesseler/BA/include -isystem /usr/include/eigen3  -std=c++17 -Wall -O3 -DNDEBUG -fPIC   -o CMakeFiles/ba_example.dir/Feature.cpp.o -c /home/ckesseler/BA/src/Feature.cpp",
+  "file": "/home/ckesseler/BA/src/Feature.cpp"
+},
+{
+  "directory": "/home/ckesseler/BA/build/src",
+  "command": "/usr/bin/g++  -DFMT_LOCALE -DGFLAGS_IS_A_DLL=0 -I/home/ckesseler/BA/include -isystem /usr/include/eigen3  -std=c++17 -Wall -O3 -DNDEBUG -fPIC   -o CMakeFiles/ba_example.dir/Frame.cpp.o -c /home/ckesseler/BA/src/Frame.cpp",
+  "file": "/home/ckesseler/BA/src/Frame.cpp"
+},
+{
+  "directory": "/home/ckesseler/BA/build/src",
+  "command": "/usr/bin/g++  -DFMT_LOCALE -DGFLAGS_IS_A_DLL=0 -I/home/ckesseler/BA/include -isystem /usr/include/eigen3  -std=c++17 -Wall -O3 -DNDEBUG -fPIC   -o CMakeFiles/ba_example.dir/MapPoint.cpp.o -c /home/ckesseler/BA/src/MapPoint.cpp",
+  "file": "/home/ckesseler/BA/src/MapPoint.cpp"
+},
+{
+  "directory": "/home/ckesseler/BA/build/src",
+  "command": "/usr/bin/g++  -DFMT_LOCALE -DGFLAGS_IS_A_DLL=0 -I/home/ckesseler/BA/include -isystem /usr/include/eigen3  -std=c++17 -Wall -O3 -DNDEBUG -fPIC   -o CMakeFiles/ba_example.dir/Reader.cpp.o -c /home/ckesseler/BA/src/Reader.cpp",
+  "file": "/home/ckesseler/BA/src/Reader.cpp"
+},
+{
+  "directory": "/home/ckesseler/BA/build/src",
+  "command": "/usr/bin/g++  -DFMT_LOCALE -DGFLAGS_IS_A_DLL=0 -I/home/ckesseler/BA/include -isystem /usr/include/eigen3  -std=c++17 -Wall -O3 -DNDEBUG -fPIC   -o CMakeFiles/ba_example.dir/main.cpp.o -c /home/ckesseler/BA/src/main.cpp",
+  "file": "/home/ckesseler/BA/src/main.cpp"
+}
+]
