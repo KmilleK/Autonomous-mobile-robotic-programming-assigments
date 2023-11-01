@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/ckesseler/EKF_SLAM/build",
+  "command": "/usr/bin/g++   -I/usr/include/eigen3 -I/home/ckesseler/EKF_SLAM/include  -std=c++14 -Wall -O3 -DNDEBUG   -o CMakeFiles/test_EKF.dir/src/main.cpp.o -c /home/ckesseler/EKF_SLAM/src/main.cpp",
+  "file": "/home/ckesseler/EKF_SLAM/src/main.cpp"
+},
+{
+  "directory": "/home/ckesseler/EKF_SLAM/build/src",
+  "command": "/usr/bin/g++  -DEKF_SLAM_EXPORTS -I/usr/include/eigen3 -I/home/ckesseler/EKF_SLAM/include  -std=c++14 -Wall -O3 -DNDEBUG -fPIC   -o CMakeFiles/EKF_SLAM.dir/EKFSLAM.cpp.o -c /home/ckesseler/EKF_SLAM/src/EKFSLAM.cpp",
+  "file": "/home/ckesseler/EKF_SLAM/src/EKFSLAM.cpp"
+},
+{
+  "directory": "/home/ckesseler/EKF_SLAM/build/src",
+  "command": "/usr/bin/g++  -DEKF_SLAM_EXPORTS -I/usr/include/eigen3 -I/home/ckesseler/EKF_SLAM/include  -std=c++14 -Wall -O3 -DNDEBUG -fPIC   -o CMakeFiles/EKF_SLAM.dir/Map.cpp.o -c /home/ckesseler/EKF_SLAM/src/Map.cpp",
+  "file": "/home/ckesseler/EKF_SLAM/src/Map.cpp"
+},
+{
+  "directory": "/home/ckesseler/EKF_SLAM/build/src",
+  "command": "/usr/bin/g++  -DEKF_SLAM_EXPORTS -I/usr/include/eigen3 -I/home/ckesseler/EKF_SLAM/include  -std=c++14 -Wall -O3 -DNDEBUG -fPIC   -o CMakeFiles/EKF_SLAM.dir/Measurement.cpp.o -c /home/ckesseler/EKF_SLAM/src/Measurement.cpp",
+  "file": "/home/ckesseler/EKF_SLAM/src/Measurement.cpp"
+},
+{
+  "directory": "/home/ckesseler/EKF_SLAM/build/src",
+  "command": "/usr/bin/g++  -DEKF_SLAM_EXPORTS -I/usr/include/eigen3 -I/home/ckesseler/EKF_SLAM/include  -std=c++14 -Wall -O3 -DNDEBUG -fPIC   -o CMakeFiles/EKF_SLAM.dir/main.cpp.o -c /home/ckesseler/EKF_SLAM/src/main.cpp",
+  "file": "/home/ckesseler/EKF_SLAM/src/main.cpp"
+}
+]

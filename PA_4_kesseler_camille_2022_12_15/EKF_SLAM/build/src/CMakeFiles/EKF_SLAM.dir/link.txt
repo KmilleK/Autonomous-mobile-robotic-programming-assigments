@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -std=c++14 -Wall -O3 -DNDEBUG  -shared -Wl,-soname,libEKF_SLAM.so -o ../../lib/libEKF_SLAM.so CMakeFiles/EKF_SLAM.dir/EKFSLAM.cpp.o CMakeFiles/EKF_SLAM.dir/Map.cpp.o CMakeFiles/EKF_SLAM.dir/Measurement.cpp.o CMakeFiles/EKF_SLAM.dir/main.cpp.o 
